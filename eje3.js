@@ -5,7 +5,7 @@ var app = express();
 app.use(express.static(__dirname));
 
 app.set('ip', process.env.IP|| '0.0.0.0');
-app.set('port', (process.env.PORT || 5000));
+app.set('port', (process.env.PORT || 3000));
 
 
 //Pagina principal
@@ -31,7 +31,7 @@ app.get('/prueba', function (req, res) {
 
 
  app.listen(app.get('port'), function() {
-  console.log('Node app is running on port', app.get('port') + 'liste adress demand: '+app.get('ip'));
+  console.log('Puerto:', app.get('port'));
 });
 
 
