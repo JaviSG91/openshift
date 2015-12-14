@@ -5,7 +5,7 @@ var app = express();
 app.use(express.static(__dirname));
 
 app.set('ip', process.env.IP|| '0.0.0.0');
-app.set('port', (process.env.PORT || 3000));
+app.set('port', (process.env.PORT || 5000));
 
 
 //Pagina principal
@@ -26,6 +26,10 @@ var pagina='<!doctype html><html><head></head><body>';
  
 app.get('/prueba', function (req, res) { 
 	res.send( 'Prueba' ); 
+});   
+
+app.get('/prueba2', function (req, res) { 
+	res.send( 'Prueba de ejercicio 6' ); 
 });   
 
 

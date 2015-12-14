@@ -23,11 +23,5 @@ describe('tests', function()
 			.expect("Content-Type", /text\/html/) 
 			.expect(200, done); 
 	}); 
-	it("Prueba de ejercicio 6", function(done) { 
- 		request(app) 
-			.get("/prueba2") 
-			.expect("Content-Type", /text\/html/) 
-			.expect(200, done); 
-	}); 
  }); 
 
